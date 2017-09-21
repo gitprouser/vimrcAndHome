@@ -122,3 +122,16 @@ vnoremap <C-Z> <C-C>:update<CR>
 " nnoremap ; :
 " nnoremap : ;
 
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
+
+nnoremap <silent> n :exe (search(@/, 'nW') == 0 ? "normal \<lt>c-w>\<lt>c-w>ggn" : "normal! n")<cr>
+nnoremap <silent> N :exe (search(@/, 'bnW') == 0 ? "normal \<lt>c-w>\<lt>c-w>G$N" : "normal! N")<cr>
+
