@@ -89,6 +89,7 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
+colorscheme desert
 
 
 " Breaking lines with \[enter] without having to go to insert mode (myself).
