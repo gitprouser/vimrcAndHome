@@ -1,3 +1,15 @@
+
+
+nnoremap ; :
+nnoremap : ;
+set autochdir
+set binary
+
+set mouse=a
+
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source %
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
