@@ -1,0 +1,7 @@
+alias ve="workon"
+alias lve="lsvirtualenv"
+alias cd_ve="cdvirtualenv"
+alias cd_ves="cdsitepackages"
+alias cd_vels="lssitepackages"
+alias new_ve="mkvirtualenv"
+alias rm_ve="rmvirtualenv"
