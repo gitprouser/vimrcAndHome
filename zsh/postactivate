@@ -1,1 +1,2 @@
-RPROMPT="$_OLD_RPROMPT"
+_OLD_RPROMPT="$RPROMPT"
+RPROMPT="$RPROMPT %{${fg_bold[cyan]}%}(env:%{${fg[yellow]}%}${VIRTUAL_ENV##*/}%{${fg_bold[cyan]}%})%{${reset_color}%}"
