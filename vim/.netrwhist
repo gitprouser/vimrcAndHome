@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/usr/local/apache-tomcat-9.0.12/webapps/manager/META-INF'
+let g:netrw_dirhist_2='/usr/local/apache-tomcat-9.0.12'
+let g:netrw_dirhist_3='/usr/local/apache-tomcat-9.0.12/conf'
+let g:netrw_dirhist_4='/Users/dgajendrangayash/.aws'

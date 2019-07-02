@@ -16,22 +16,28 @@ filetype off                  " required
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" remove trailing spaces
+autocmd BufWritePre * %s/\s\+$//e
 
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'VundleVim/ctrlp.vim'
-Plugin 'VundleVim/vim-gitgutter'
-Plugin 'VundleVim/vim-airline'
+" " set the runtime path to include Vundle and initialize
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+" 
+" 
+" " alternatively, pass a path where Vundle should install plugins
+" "call vundle#begin('~/some/path/here')
+" 
+" " let Vundle manage Vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'VundleVim/ctrlp.vim'
+" Plugin 'VundleVim/vim-gitgutter'
+" Plugin 'VundleVim/vim-airline'
+" 
+" " All of your Plugins must be added before the following line
+" call vundle#end()            " required
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
